@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/flux-control-front/static/css/main.0dea9774.chunk.css",
-    "main.js": "/flux-control-front/static/js/main.9259d6c3.chunk.js",
-    "main.js.map": "/flux-control-front/static/js/main.9259d6c3.chunk.js.map",
-    "runtime-main.js": "/flux-control-front/static/js/runtime-main.c68820db.js",
-    "runtime-main.js.map": "/flux-control-front/static/js/runtime-main.c68820db.js.map",
-    "static/css/2.aa9cacd8.chunk.css": "/flux-control-front/static/css/2.aa9cacd8.chunk.css",
-    "static/js/2.df600082.chunk.js": "/flux-control-front/static/js/2.df600082.chunk.js",
-    "static/js/2.df600082.chunk.js.map": "/flux-control-front/static/js/2.df600082.chunk.js.map",
-    "index.html": "/flux-control-front/index.html",
-    "precache-manifest.f405534352b0dc35c50c424f163ea127.js": "/flux-control-front/precache-manifest.f405534352b0dc35c50c424f163ea127.js",
-    "service-worker.js": "/flux-control-front/service-worker.js",
-    "static/css/2.aa9cacd8.chunk.css.map": "/flux-control-front/static/css/2.aa9cacd8.chunk.css.map",
-    "static/css/main.0dea9774.chunk.css.map": "/flux-control-front/static/css/main.0dea9774.chunk.css.map",
-    "static/js/2.df600082.chunk.js.LICENSE.txt": "/flux-control-front/static/js/2.df600082.chunk.js.LICENSE.txt"
+    "main.css": "/flux-control-client/static/css/main.cd90d74a.chunk.css",
+    "main.js": "/flux-control-client/static/js/main.13603b6b.chunk.js",
+    "main.js.map": "/flux-control-client/static/js/main.13603b6b.chunk.js.map",
+    "runtime-main.js": "/flux-control-client/static/js/runtime-main.4037cf20.js",
+    "runtime-main.js.map": "/flux-control-client/static/js/runtime-main.4037cf20.js.map",
+    "static/css/2.aa9cacd8.chunk.css": "/flux-control-client/static/css/2.aa9cacd8.chunk.css",
+    "static/js/2.cd953529.chunk.js": "/flux-control-client/static/js/2.cd953529.chunk.js",
+    "static/js/2.cd953529.chunk.js.map": "/flux-control-client/static/js/2.cd953529.chunk.js.map",
+    "index.html": "/flux-control-client/index.html",
+    "precache-manifest.c4459851fccc9e592a77c301c413106d.js": "/flux-control-client/precache-manifest.c4459851fccc9e592a77c301c413106d.js",
+    "service-worker.js": "/flux-control-client/service-worker.js",
+    "static/css/2.aa9cacd8.chunk.css.map": "/flux-control-client/static/css/2.aa9cacd8.chunk.css.map",
+    "static/css/main.cd90d74a.chunk.css.map": "/flux-control-client/static/css/main.cd90d74a.chunk.css.map",
+    "static/js/2.cd953529.chunk.js.LICENSE.txt": "/flux-control-client/static/js/2.cd953529.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c68820db.js",
+    "static/js/runtime-main.4037cf20.js",
     "static/css/2.aa9cacd8.chunk.css",
-    "static/js/2.df600082.chunk.js",
-    "static/css/main.0dea9774.chunk.css",
-    "static/js/main.9259d6c3.chunk.js"
+    "static/js/2.cd953529.chunk.js",
+    "static/css/main.cd90d74a.chunk.css",
+    "static/js/main.13603b6b.chunk.js"
   ]
 }
