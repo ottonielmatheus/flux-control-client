@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/flux-control-client/static/css/main.c98b83dd.chunk.css",
-    "main.js": "/flux-control-client/static/js/main.8500aebe.chunk.js",
-    "main.js.map": "/flux-control-client/static/js/main.8500aebe.chunk.js.map",
+    "main.js": "/flux-control-client/static/js/main.6f90d6fa.chunk.js",
+    "main.js.map": "/flux-control-client/static/js/main.6f90d6fa.chunk.js.map",
     "runtime-main.js": "/flux-control-client/static/js/runtime-main.4037cf20.js",
     "runtime-main.js.map": "/flux-control-client/static/js/runtime-main.4037cf20.js.map",
     "static/css/2.aa9cacd8.chunk.css": "/flux-control-client/static/css/2.aa9cacd8.chunk.css",
     "static/js/2.cd953529.chunk.js": "/flux-control-client/static/js/2.cd953529.chunk.js",
     "static/js/2.cd953529.chunk.js.map": "/flux-control-client/static/js/2.cd953529.chunk.js.map",
     "index.html": "/flux-control-client/index.html",
-    "precache-manifest.b9f1f470853404c9efcad1c86e52bcc5.js": "/flux-control-client/precache-manifest.b9f1f470853404c9efcad1c86e52bcc5.js",
+    "precache-manifest.946c3a73402aa4db6b36912ef6504e42.js": "/flux-control-client/precache-manifest.946c3a73402aa4db6b36912ef6504e42.js",
     "service-worker.js": "/flux-control-client/service-worker.js",
     "static/css/2.aa9cacd8.chunk.css.map": "/flux-control-client/static/css/2.aa9cacd8.chunk.css.map",
     "static/css/main.c98b83dd.chunk.css.map": "/flux-control-client/static/css/main.c98b83dd.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.aa9cacd8.chunk.css",
     "static/js/2.cd953529.chunk.js",
     "static/css/main.c98b83dd.chunk.css",
-    "static/js/main.8500aebe.chunk.js"
+    "static/js/main.6f90d6fa.chunk.js"
   ]
 }
