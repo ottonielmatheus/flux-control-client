@@ -1,0 +1,44 @@
+#menu
+{
+    width: 17%;
+    z-index: 1;
+    box-shadow: 0 0 2px .5px var(--border-color);
+
+    #user-actions
+    {
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 5% 10%;
+        border-bottom: solid .5px var(--border-color);
+
+        text-decoration: none;
+    }
+
+    #user-info
+    {
+        align-items: center;
+        justify-content: center;
+
+        padding: 5%;
+        background-color: white;
+        border-bottom: solid .5px var(--border-color);
+
+        .img
+        {
+            width: 40px;
+            height: 40px;
+
+            margin: 0 7% 0 0;
+            border-radius: 50%;
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .name
+        {
+            padding: 5% 0;
+        }
+    }
+}

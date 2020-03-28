@@ -1,0 +1,98 @@
+*
+{
+  --primary-color: #1fc8db;
+  --primary-hover-color: #26d7eb;
+  --primary-border-color: rgb(74, 136, 207);
+
+  --secondary-color: white;
+  --secondary-hover-color: rgb(248, 248, 248);
+
+  --disabled-color: #e0e0e0;
+  --disabled-font-color: rgb(161, 161, 161);
+
+  --main-background-color: white;
+  /* old: rgb(247, 247, 247) */
+  --secondary-background-color: #f9f9f9;
+
+  /* old: rgb(219, 219, 219) */
+  --border-color: rgb(236, 236, 236);
+  --shadow-color: rgb(236, 236, 236);
+  --font-color: rgb(53, 53, 53);
+  --weak-font-color: rgb(97, 97, 97);
+  --button-font-color: white;
+
+  --success-color: #2ca388;
+  --failure-color: rgb(228, 100, 83);
+}
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+button {
+  border-style: solid;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--secondary-background-color);
+}
+
+main
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--font-color);
+}
+
+input, button
+{
+  border-radius: 3px !important;
+}
+
+main input, main button
+{
+  outline: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a, a:visited
+{
+  color: rgb(53, 53, 224);
+}
+
+.h-box
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.v-box
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.arrival
+{
+  color: #2ca388;
+}
+
+.departure
+{
+  color: #D7250E;
+}

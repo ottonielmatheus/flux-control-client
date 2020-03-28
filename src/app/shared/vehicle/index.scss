@@ -1,0 +1,153 @@
+.vehicle-card
+{
+    position: relative;
+    width: 27.80%;
+    margin: .2%;
+    padding: 1.5% 2.5%;
+
+    justify-content: space-between;
+
+    border: solid .5px var(--border-color);
+    border-radius: 5px;
+    background-color: var(--secondary-background-color);
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+
+    cursor: pointer;
+
+    &.selected
+    {
+        transition: all .3s;
+
+        border-color: var(--primary-color) !important;
+        box-shadow: 0 0 0 1px var(--primary-color) !important;
+
+        .last-record { display: none !important; }
+        .action { display: block !important; }
+
+    }
+
+    &.pulse
+    {
+        box-shadow: 0 0 0 rgba(74, 136, 207, 0.4);
+        animation: pulse 1.2s infinite;
+    }
+
+    .timer
+    {
+        top: -20%;
+        right: 1.5%;
+        position: absolute;
+        padding: 1% 2%;
+
+        text-align: center;
+
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+
+        border-radius: 3px;
+        background-color: rgb(101, 187, 89);
+    }
+
+    .vehicle-info
+    {
+        .license-plate
+        {
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+
+        .company-and-number
+        {
+            color: var(--weak-font-color);
+        }
+    }
+
+    .last-record
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 35%;
+        padding: 0 3%;
+
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+
+        .icon
+        {
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        .moment
+        {
+            text-align: center;
+            font-weight: 600;
+
+            .date
+            {
+                font-size: 11px;
+                color: var(--weak-font-color);
+            }
+        }
+
+        .no-record
+        {
+            width: 100%;
+            text-align: center;
+            white-space: nowrap;
+            color: var(--weak-font-color);
+        }
+    }
+
+    .loader
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 2%;
+    }
+
+    .action
+    {
+        display: none;
+
+        width: 40%;
+        cursor: pointer;
+
+        &:hover
+        {
+            background-color: var(--primary-hover-color);
+        }
+    }
+}
+
+.show-more
+{
+    text-align: right;
+    text-decoration: none;
+    padding-top: 2%;
+}
+
+@keyframes pulse
+{
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(74, 136, 207, 0.4);
+        box-shadow: 0 0 0 0 rgba(74, 136, 207, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 5px rgba(74, 136, 207, 0);
+        box-shadow: 0 0 0 5px rgba(74, 136, 207, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(74, 136, 207, 0);
+        box-shadow: 0 0 0 0 rgba(74, 136, 207, 0);
+    }
+}

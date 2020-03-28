@@ -1,0 +1,29 @@
+name: MasterDeployCI
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: install
+    - name: Update Node
+      run: |
+        sudo npm update npm -g
+        node --version
+    - name: Set git configs
+      run: |
+        git config --global user.email ${{secrets.GITHUB_EMAIL}}
+        git config --global user.name ${{secrets.GITHUB_USERNAME}}
+        git remote set-url origin https://${{secrets.GITHUB_PESONAL_ACCESS_TOKEN}}@github.com/${{secrets.GITHUB_USERNAME}}/flux-control-client.git
+    - name: Deploy to GH Pages
+      run: |
+        sudo yarn
+        sudo yarn deploy
