@@ -25,10 +25,13 @@ function LandingPage ({ history, match, ...props }) {
       <div id="geral" className="h-box">
         <MenuBar history={history} current={currentView} />
         <main id="screen">
-          {currentView === 'settings' && <Settings />}
-          {currentView === 'register' && <Register />}
-          {currentView === 'timeline' && <Timeline />}
-          {<NotFound search={currentView} />}
+          {
+            {
+              settings: <Settings />,
+              register: <Register />,
+              timeline: <Timeline />
+            }[currentView] || <NotFound search={currentView} />
+          }
         </main>
       </div>
     </>
