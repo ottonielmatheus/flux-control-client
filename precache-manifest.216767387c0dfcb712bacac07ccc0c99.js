@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5139815d05c1d05fee5ce4be501fad77",
+    "revision": "f9261f4ae796b9f50224f260b2d6381e",
     "url": "/flux-control-client/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flux-control-client/static/css/2.aa9cacd8.chunk.css"
   },
   {
-    "revision": "7eeee7ef1c2c5a54bd1c",
+    "revision": "f87c9e0b739e75859b0e",
     "url": "/flux-control-client/static/css/main.127a386d.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flux-control-client/static/js/2.e67e0c91.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7eeee7ef1c2c5a54bd1c",
-    "url": "/flux-control-client/static/js/main.1cb6e3ce.chunk.js"
+    "revision": "f87c9e0b739e75859b0e",
+    "url": "/flux-control-client/static/js/main.7993942b.chunk.js"
   },
   {
     "revision": "23b847dc41e0b0d2b905",
