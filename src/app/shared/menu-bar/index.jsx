@@ -70,7 +70,11 @@ function MenuBar ({ history, current }) {
         </Sidenav.Header>
         <Sidenav.Body>
           <Nav>
+<<<<<<< HEAD
             <Nav.Item eventKey={'register'} icon={<Icon icon="car" />}
+=======
+            <Nav.Item eventKey={'register'} icon={<Icon icon="exchange" />}
+>>>>>>> url routes & user infos
               onClick={() => history.push('/flux-control-client/register')}
             >
               Registrar
