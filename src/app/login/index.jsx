@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 
 import { Input, Button, Message } from 'rsuite';
 
-import auth from '../protected-route/Auth';
+import auth from '../routes/protected-route/Auth';
 
 
 function Login ({ history }) {
@@ -11,6 +11,12 @@ function Login ({ history }) {
   const [login, setLogin] = useState("login");
   const [password, setPassword] = useState("password");
   const [messages, setMessages] = useState([]);
+
+  useEffect(() => {
+    if (auth.isAuthenticated()) {
+      history.push('/flux-control-client/');
+    }
+  });
 
   return (
     <main id="login">

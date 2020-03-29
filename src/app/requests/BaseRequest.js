@@ -1,5 +1,5 @@
 import base from '../../base-api';
-import auth from '../protected-route/Auth';
+import auth from '../routes/protected-route/Auth';
 
 const request = async (user = { api: "", body: {}, method: "POST" }) => {
 
