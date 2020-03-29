@@ -1,21 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 
 import MenuBar from '../shared/menu-bar';
+import Settings from '../landing-page/settings';
 import Register from '../landing-page/register';
 import Timeline from '../landing-page/timeline';
+import NotFound from '../shared/not-found';
 
 
-function LandingPage () {
-  const [ switchScream, setSwitchScream ] = useState("register");
+function LandingPage ({ history, match, ...props }) {
+
+  const [currentView, setCurrentView] = useState('register');
+
+  useEffect(() => {
+    if (match.params.view) {
+      setCurrentView(match.params.view);
+    } else {
+      history.push('/flux-control-client/register');
+    }
+  }, [history, match.params.view]);
 
   return (
     <>
       <div id="geral" className="h-box">
-        <MenuBar current={switchScream} switchTo={(screen) => { setSwitchScream(screen) }} />
+        <MenuBar history={history} current={currentView} />
         <main id="screen">
-          {switchScream === 'register' && <Register />}
-          {switchScream === 'timeline' && <Timeline />}
+          {currentView === 'settings' && <Settings />}
+          {currentView === 'register' && <Register />}
+          {currentView === 'timeline' && <Timeline />}
+          {<NotFound search={currentView} />}
         </main>
       </div>
     </>

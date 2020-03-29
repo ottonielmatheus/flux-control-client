@@ -1,0 +1,18 @@
+#not-found
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        p
+        {
+            font-size: 1.3em;
+        }
+    }
+}

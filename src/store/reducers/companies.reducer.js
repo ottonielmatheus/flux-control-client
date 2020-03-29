@@ -1,5 +1,6 @@
 const INITIAL_STATE = {
   selectedVehicle: null,
+  selectedCompany: null,
   source: []
 };
 

@@ -41,7 +41,7 @@ function Register ({ companies, setCompanies }) {
   }, []);
 
   return (
-    <section id="register" className="h-box">
+    <section id="register">
       <div className="container">
         <div className="vehicle-search h-box">
           <div className="pagination">

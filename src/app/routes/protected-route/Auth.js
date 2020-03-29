@@ -1,4 +1,4 @@
-import base from '../../base-api';
+import base from '../../../base-api';
 
 class Auth {
 
@@ -30,6 +30,8 @@ class Auth {
     if (resp.status === 200) {
       const session = await resp.json();
       this.bearer = session.token;
+
+      delete session.message;
       localStorage.setItem('session', JSON.stringify(session));
     }
 
@@ -37,6 +39,7 @@ class Auth {
   }
 
   logout() {
+    this.bearer = null;
     localStorage.setItem('session', null);
   }
 
