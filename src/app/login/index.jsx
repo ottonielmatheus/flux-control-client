@@ -14,7 +14,7 @@ function Login ({ history }) {
 
   useEffect(() => {
     if (auth.isAuthenticated()) {
-      history.push('/flux-control-client/');
+      history.push('/');
     }
   });
 
@@ -61,7 +61,7 @@ function Login ({ history }) {
               (authenticated) => {
                 button.disabled = false;
                 if (authenticated) {
-                  history.push("/flux-control-client");
+                  history.push("/");
                 } else {
                   let errors = [];
                   errors.push("Usuário e/ou senha incorreto(s)");

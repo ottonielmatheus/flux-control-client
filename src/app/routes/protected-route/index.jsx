@@ -12,7 +12,7 @@ function ProtectedRoute ({ component: Component, ...rest }) {
         } else {
           return (
             <Redirect
-              to={{ pathname: "/flux-control-client/login", state: { from: props.location } }}
+              to={{ pathname: "/login", state: { from: props.location } }}
             />
           );
         }

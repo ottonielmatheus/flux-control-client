@@ -19,7 +19,7 @@ function NotFound ({ search }) {
                 </ul>
 
                 <small>
-                    <Link to="/flux-control-client/">Voltar para o início</Link>
+                    <Link to="/">Voltar para o início</Link>
                 </small>
             </div>
         </section>

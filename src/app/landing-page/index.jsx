@@ -16,7 +16,7 @@ function LandingPage ({ history, match, ...props }) {
     if (match.params.view) {
       setCurrentView(match.params.view);
     } else {
-      history.push('/flux-control-client/register');
+      history.push('/register');
     }
   }, [history, match.params.view]);
 

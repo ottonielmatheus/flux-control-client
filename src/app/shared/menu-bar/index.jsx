@@ -24,7 +24,7 @@ function MenuBar ({ history, current }) {
         <Sidenav.Header>
           <div>
             <div id="user-actions" className="h-box">
-              <Link to="/flux-control-client/settings">
+              <Link to="/settings">
                 <Whisper placement="auto" trigger="hover"
                   speaker={
                     <Tooltip>
@@ -34,7 +34,7 @@ function MenuBar ({ history, current }) {
                   <Icon icon="gear-circle" />
                 </Whisper>
               </Link>
-              <Link to="/flux-control-client/login" onClick={() => auth.logout()}>
+              <Link to="/login" onClick={() => auth.logout()}>
               <Whisper placement="auto" trigger="hover"
                 speaker={
                   <Tooltip>
@@ -71,12 +71,12 @@ function MenuBar ({ history, current }) {
         <Sidenav.Body>
           <Nav>
             <Nav.Item eventKey={'register'} icon={<Icon icon="exchange" />}
-              onClick={() => history.push('/flux-control-client/register')}
+              onClick={() => history.push('/register')}
             >
               Registrar
             </Nav.Item>
             <Nav.Item eventKey={'timeline'} icon={<Icon icon="realtime" />}
-              onClick={() => history.push('/flux-control-client/timeline')}
+              onClick={() => history.push('/timeline')}
             >
               Linha do tempo
             </Nav.Item>

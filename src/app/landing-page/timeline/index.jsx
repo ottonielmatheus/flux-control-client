@@ -69,7 +69,7 @@ function Timeline({ companies, selectCompany }) {
               <div className="company-thumbnail"
                 style={{
                   borderColor: company.color,
-                  backgroundImage: `url('${company.thumbnail || 'flux-control-client/images/no-image.jpg'}')`
+                  backgroundImage: `url('${company.thumbnail || '/images/no-image.jpg'}')`
                 }}
               ></div>
               <h4 className="company-name">{company.name}</h4>
